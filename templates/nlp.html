@@ -1,0 +1,37 @@
+{% load static %}
+{% include "header.html" %}
+
+<!--===============================
+  =            Job lists            =
+  ================================-->
+<section class="job-list section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10 m-auto">
+        <div class="block">
+          <div class="title text-center">
+            <h2>Select a Document for Natural Language Processing </h2>
+          </div>
+          <!-- Job List -->
+          {% for doc in query_docs %}     
+          <div class="job">
+						<div class="content">
+							<!-- Job Title -->
+							<h3>{{ doc.title  }}</h3>
+							<!-- Location -->
+							<p>{{ doc.author  }}</p>
+						</div>
+						<!-- Action Button -->
+						<div class="apply-button">
+							<a href="#" class="btn btn-main-sm">Process</a>
+						</div>
+					</div>   
+          {% endfor %}       
+
+        </div>
+      </div>
+    </div>
+</section>
+<!--====  End of Job lists  ====-->
+
+{% include "footer.html" %}
