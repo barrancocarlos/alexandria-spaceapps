@@ -6,11 +6,11 @@ Alexandria is an artificial intelligence app that will improve the accessibility
 
 _App screen capture_
 
-![Alt Text](https://github.com/barrancocarlos/alexandria-spaceapps/blob/main/static/assets/images/theme/home.png)
+![Alt Text](https://github.com/barrancocarlos/alexandria-spaceapps/blob/main/static/assets/images/home.png)
 
 _Youtube Presentation_
 
-[![Alt Text](https://github.com/barrancocarlos/alexandria-spaceapps/blob/main/static/assets/images/theme/youtube.png)](https://www.youtube.com/watch?v=GwhijugkqIo&ab_channel=CarlosBarranco)
+[![Alt Text](https://github.com/barrancocarlos/alexandria-spaceapps/blob/main/static/assets/images/youtube.png)](https://www.youtube.com/watch?v=GwhijugkqIo&ab_channel=CarlosBarranco)
 
 ## Getting Started
 
