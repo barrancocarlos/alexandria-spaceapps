@@ -1,3 +1,22 @@
 .job-list{
   margin-top: 100px;
 }
+
+.feature{
+  margin-top: 100px;
+}
+
+.feature .testimonial ul.meta li {
+  font-size: 15px;
+  margin-right: 10px;
+  margin-top: 11px;
+  margin-bottom: 20px;
+}
+
+.freq-title {
+  margin-bottom: 40px; 
+}
+
+.feature .testimonial p {  
+  font-size: 18px;
+}

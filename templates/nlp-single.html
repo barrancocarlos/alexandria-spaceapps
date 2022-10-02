@@ -1,35 +1,33 @@
 {% load static %}
 {% include "header.html" %}
 
-<section class="feature section pt-0">
+<section class="feature section">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 ml-auto align-self-center">
+			<div class="col-lg-12 ml-auto align-self-center">
 				<div class="feature-content">
 					<!-- Feature Title -->
-					<h2>{{ query_docs.title  }}<a
-							href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
+					<h2>{{ query_docs.title  }}</h2>
 					<!-- Feature Description -->
-					<p>{{ query_docs.keywords }}</p>
+					<h4>Generated Summary</h4>
           <p>{{ query_docs.summary }}</p>
 				</div>
 				<!-- Testimonial Quote -->
+				<h4>Extracted Keywords</h4>
 				<div class="testimonial">
-					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
-					</p>
+					<p>{{ query_docs.keywords }}</p>
 					<ul class="list-inline meta">
 						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
+							<img src="{% static 'assets/images/user.png' %}" alt="">
 						</li>
-						<li class="list-inline-item">{{ query_docs.author }}</li>                    
+						<li class="list-inline-item">Author: {{ query_docs.author }}</li>                    
 					</ul>
 				</div>
 			</div>
-			<div class="col-lg-6 mr-auto justify-content-center">
+			<div class="col-lg-12 mr-auto justify-content-center text-center">
 				<!-- Feature mockup -->
-				<div class="image-content" data-aos="fade-left">
+				<h2 class="freq-title">Keyword Frequency</h2>
+				<div class="image-content">
 					<img class="img-fluid" src={{ freq_url }} alt="ipad">
 				</div>
 			</div>
