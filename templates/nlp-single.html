@@ -10,7 +10,8 @@
 					<h2>{{ query_docs.title  }}<a
 							href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
 					<!-- Feature Description -->
-					<p>{{ text }}</p>
+					<p>{{ query_docs.keywords }}</p>
+          <p>{{ query_docs.summary }}</p>
 				</div>
 				<!-- Testimonial Quote -->
 				<div class="testimonial">
@@ -22,15 +23,14 @@
 						<li class="list-inline-item">
 							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
 						</li>
-						<li class="list-inline-item">{{ query_docs.author }}</li>  
-            <li class="list-inline-item">{{ reverse }}</li>            
+						<li class="list-inline-item">{{ query_docs.author }}</li>                    
 					</ul>
 				</div>
 			</div>
 			<div class="col-lg-6 mr-auto justify-content-center">
 				<!-- Feature mockup -->
 				<div class="image-content" data-aos="fade-left">
-					<img class="img-fluid" src="images/feature/feature-new-02.jpg" alt="ipad">
+					<img class="img-fluid" src={{ freq_url }} alt="ipad">
 				</div>
 			</div>
 		</div>
