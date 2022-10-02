@@ -1,0 +1,40 @@
+{% load static %}
+{% include "header.html" %}
+
+<!--==================================
+=            Corpus            =
+===================================-->
+<section class="section page-title">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 m-auto">
+				<!-- Page Title -->
+				<h1>Corpus</h1>
+				<!-- Page Description -->
+				<p>A corpus is a collection of documents, in this case, we built a test corpus with just a few random documents for proof of concept
+          . In this page you can access them on the NASA Technical Report Server.
+        </p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section company-fun-facts">
+	<div class="container">		
+		<div class="row">		
+      {% for doc in query_docs %}  
+			<div class="col-lg-3 col-md-6">
+				<div class="fun-fact">
+					<!-- Icon -->
+					<i class="ti-agenda"></i>
+					<h3 class="corpus-title">{{ doc.title  }}</h3>					
+          <div class="apply-button">
+            <a href="https://ntrs.nasa.gov/citations/{{ doc.doc_id }}" target="_blank" class="btn btn-main-sm">NASA NTRS</a>
+          </div>
+				</div>
+			</div>	
+      {% endfor %}  		
+		</div>
+	</div>
+</section>
+
+{% include "footer.html" %}

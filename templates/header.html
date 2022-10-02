@@ -12,9 +12,7 @@
   ================================================== -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Bootstrap App Landing Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Small Apps Template v1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon.png' %}" />
@@ -42,18 +40,22 @@
         <span class="ti-menu"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">        
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+        <ul class="navbar-nav ml-auto"> 
+          {% url '/' as home %}       
+          <li class="nav-item {% if request.path == "/" %}active{% endif %}">
+            <a class="nav-link" href="/">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="nlp.html">NL Processing</a>
+          {% url 'nlp' as nlp %} 
+          <li class="nav-item {% if request.path == nlp %}active{% endif %}">
+            <a class="nav-link" href="{{ nlp }}">NL Processing</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="corpus.html">Corpus</a>
+          {% url 'corpus' as corpus %} 
+          <li class="nav-item {% if request.path == corpus %}active{% endif %}">
+            <a class="nav-link" href="{{ corpus }}">Corpus</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#video-section">Video Demo</a>
+          {% url 'video' as video %} 
+          <li class="nav-item {% if request.path == video %}active{% endif %}">
+            <a class="nav-link" href="{{ video }}">Video Demo</a>
           </li>
         </ul>
       </div>

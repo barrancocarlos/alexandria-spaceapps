@@ -1,3 +1,16 @@
+.title-color {
+  color: #2e7eed;
+}
+
+.section-home{
+  padding-top: 0px;
+}
+
+.home-desc {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .job-list{
   margin-top: 100px;
 }
@@ -19,4 +32,73 @@
 
 .feature .testimonial p {  
   font-size: 18px;
+  margin-bottom: 30px;
 }
+
+.feature .testimonial ul.meta li img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  margin-top: -30px;
+}
+
+.feature .feature-content h2 {
+  margin-bottom: 60px;
+}
+
+.company-fun-facts {
+  padding-top: 10px;
+}
+
+.corpus-title {
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+
+.company-fun-facts .fun-fact {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+
+.company-fun-facts .fun-fact i {
+  font-size: 42px;
+  display: inline-block;
+  margin-bottom: 21px;
+  padding-top: 14px;
+  line-height: 60px;
+  height: 90px;
+  width: 90px;
+  border: 1px solid #000;
+  border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+  .feature .feature-content h2, .feature .feature-content p {
+    text-align: left;
+  }
+    .feature .testimonial {
+      text-align: left;
+  }
+  .feature {
+    margin-top: 0px;
+  }
+
+  .section-home {
+    text-align: center;
+}
+
+  .home-title {
+    font-size: 32px;
+    line-height: 42px;    
+    margin-bottom: 60px;
+  }
+
+  .image-home{
+    display: none;
+  }
+
+
+}
+
+

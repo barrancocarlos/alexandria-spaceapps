@@ -1,0 +1,32 @@
+{% load static %}
+{% include "header.html" %}
+
+<!--=================================
+=            Video Promo            =
+==================================-->
+<section class="banner" id="video-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 m-auto">
+				<!-- Banner Contents -->
+				<div class="block text-center">
+					<h1>Alexandria Showcase</h1>
+					<p>A short video demo of Alexandria´s features</p>					
+					<!-- Promo Video -->
+					<div class="video">
+						<img class="img-fluid shadow" src="{% static 'assets/images/thumbs/promo-video-thumbnail.jpg' %}" alt="video-thumbnail">
+						<div class="video-button video-box">
+							<!-- Video Play Button -->
+							<a href="javascript:void(0)">
+								<i class="ti-control-play" data-video="https://www.youtube.com/embed/jrkvirglgaQ?autoplay=1"></i>
+							</a>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--====  End of Video Promo  ====-->
+
+{% include "footer.html" %}

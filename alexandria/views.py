@@ -18,6 +18,14 @@ import pandas as pd
 def home(request):
 	return render(request, "index.html", {})
 
+def corpus(request):    
+    query_docs = Document.objects.all()      
+    context = {"query_docs": query_docs}
+    return render(request, "corpus.html", context)
+
+def video(request):
+	return render(request, "video.html", {})
+
 
 def nlp(request):
 	query_docs = Document.objects.all()
@@ -29,9 +37,11 @@ def nlpsingle(request):
     query_docs = Document.objects.get(pk=doc_id)
     pre_url = "/static/assets/images/"
     pos_url = ".png"
-    freq_img = query_docs.doc_id
-    freq_url = pre_url + freq_img + pos_url
-    context = {"query_docs": query_docs, "freq_url": freq_url}
+    nrts = "https://ntrs.nasa.gov/citations/"
+    doc_id = query_docs.doc_id
+    freq_url = pre_url + doc_id + pos_url
+    nrts_url = nrts + doc_id
+    context = {"query_docs": query_docs, "freq_url": freq_url, "nrts_url": nrts_url}
     return render(request, "nlp-single.html", context)
 
 
