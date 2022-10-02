@@ -10,7 +10,7 @@ _App screen capture_
 
 _Youtube Presentation_
 
-[![Alt Text](https://github.com/barrancocarlos/alexandria-spaceapps/blob/main/static/assets/images/youtube.png)](https://www.youtube.com/watch?v=GwhijugkqIo&ab_channel=CarlosBarranco)
+[![Alt Text](https://github.com/barrancocarlos/alexandria-spaceapps/blob/main/static/assets/images/youtube.png)](https://www.youtube.com/watch?v=SvhbZNcusnI&ab_channel=CarlosBarranco)
 
 ## Getting Started
 
